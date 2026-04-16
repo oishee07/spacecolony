@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0D0D1A</color>
+    <color name="bg_surface">#1A1A2E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="accent_blue">#1E90FF</color>
+    <color name="pilot_color">#4488FF</color>
+    <color name="engineer_color">#FFCC00</color>
+    <color name="medic_color">#44CC44</color>
+    <color name="scientist_color">#AA44FF</color>
+    <color name="soldier_color">#FF4444</color>
+    <color name="black">#FF000000</color>
+</resources>

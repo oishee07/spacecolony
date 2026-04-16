@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="8dp">
+
+    <TextView
+        android:text="QUARTERS"
+        android:textColor="#FFD700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No crew here. Recruit some!"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:padding="32dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_quarters_crew"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_to_simulator"
+            android:text="→ Simulator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/engineer_color"
+            android:textColor="@color/white"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btn_to_mission"
+            android:text="→ Mission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/soldier_color"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

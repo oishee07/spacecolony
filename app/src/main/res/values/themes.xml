@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.SpaceColony" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#1E90FF</item>
+        <item name="colorPrimaryVariant">#0A0A1A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+</resources>

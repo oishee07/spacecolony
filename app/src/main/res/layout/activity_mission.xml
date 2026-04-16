@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_dark" android:padding="8dp">
+
+    <TextView android:id="@+id/tv_mission_title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textColor="#FFD700"
+        android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:padding="8dp"/>
+
+    <!-- Threat card -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@color/bg_surface" android:padding="8dp" android:layout_marginBottom="4dp">
+        <TextView android:id="@+id/tv_threat_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#FF4444" android:textStyle="bold" android:textSize="15sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <ProgressBar android:id="@+id/pb_threat_energy" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp" android:layout_height="12dp" android:layout_weight="1"
+                android:progressTint="#FF4444" android:layout_marginEnd="8dp"/>
+            <TextView android:id="@+id/tv_threat_energy" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Crew cards row -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <!-- Card 1 -->
+        <LinearLayout android:id="@+id/card_crew1" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical" android:background="@color/bg_surface"
+            android:padding="6dp" android:layout_marginEnd="4dp">
+            <ImageView android:id="@+id/iv_crew1_spec" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center"/>
+            <TextView android:id="@+id/tv_crew1_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="11sp" android:gravity="center" android:layout_gravity="center"/>
+            <ProgressBar android:id="@+id/pb_crew1_energy" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="8dp" android:progressTint="#00FF88"/>
+            <TextView android:id="@+id/tv_crew1_energy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="10sp" android:layout_gravity="center"/>
+        </LinearLayout>
+        <!-- Card 2 -->
+        <LinearLayout android:id="@+id/card_crew2" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical" android:background="@color/bg_surface"
+            android:padding="6dp" android:layout_marginEnd="4dp">
+            <ImageView android:id="@+id/iv_crew2_spec" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center"/>
+            <TextView android:id="@+id/tv_crew2_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="11sp" android:gravity="center" android:layout_gravity="center"/>
+            <ProgressBar android:id="@+id/pb_crew2_energy" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="8dp" android:progressTint="#00FF88"/>
+            <TextView android:id="@+id/tv_crew2_energy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="10sp" android:layout_gravity="center"/>
+        </LinearLayout>
+        <!-- Card 3 -->
+        <LinearLayout android:id="@+id/card_crew3" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical" android:background="@color/bg_surface"
+            android:padding="6dp">
+            <ImageView android:id="@+id/iv_crew3_spec" android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center"/>
+            <TextView android:id="@+id/tv_crew3_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="11sp" android:gravity="center" android:layout_gravity="center"/>
+            <ProgressBar android:id="@+id/pb_crew3_energy" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="8dp" android:progressTint="#00FF88"/>
+            <TextView android:id="@+id/tv_crew3_energy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="10sp" android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_current_actor" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textColor="#FFD700"
+        android:textSize="14sp" android:padding="4dp" android:gravity="center"/>
+
+    <!-- Action buttons (Tactical Combat) -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+        <Button android:id="@+id/btn_attack" android:text="⚔ Attack"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:backgroundTint="#CC3333" android:textColor="@color/white" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btn_defend" android:text="🛡 Defend"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:backgroundTint="#2255AA" android:textColor="@color/white" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btn_special" android:text="✨ Special"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:backgroundTint="#885500" android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- Mission log -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mission_log"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:background="@color/bg_surface"
+        android:layout_marginTop="4dp" android:padding="4dp"/>
+
+    <Button android:id="@+id/btn_close_mission" android:text="Return to Base"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_blue" android:textColor="@color/white"/>
+</LinearLayout>

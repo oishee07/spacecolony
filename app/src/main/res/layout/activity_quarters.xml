@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_dark" android:padding="16dp">
+
+    <TextView android:text="🏠 QUARTERS" android:textColor="#FFD700"
+        android:textSize="20sp" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView android:id="@+id/list_quarters_crew"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView android:id="@+id/tv_quarters_result"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="#AAFFAA" android:padding="8dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btn_quarters_to_sim" android:text="→ Simulator"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:backgroundTint="@color/engineer_color"
+            android:textColor="@color/white" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btn_quarters_to_mission" android:text="→ Mission"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:backgroundTint="@color/soldier_color"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
